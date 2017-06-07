@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Class Name="M120_LB2_FS17.Bibliothek">
+    <Position X="4.5" Y="4.75" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAIBAAEAAAQAgAEgBABAggAAAAABECAAQ=</HashCode>
+      <FileName>Bibliothek.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="M120_LB2_FS17.Film">
+    <Position X="0.75" Y="1" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAQAgAAEAAAABAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Film.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="M120_LB2_FS17.Platz">
+    <Position X="3.5" Y="1" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAQAgAAkAAAAAAAAAAAABAAAAAAAAQAAAAA=</HashCode>
+      <FileName>Platz.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="M120_LB2_FS17.Reservation">
+    <Position X="6.25" Y="1" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAEAAAAAAAAAAACBAAAACAAAAEAAAA=</HashCode>
+      <FileName>Reservation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

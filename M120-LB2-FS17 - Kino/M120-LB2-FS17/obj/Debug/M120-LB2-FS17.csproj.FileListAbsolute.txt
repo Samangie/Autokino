@@ -1,0 +1,59 @@
+C:\Users\root\Desktop\M120\LB2-2017\M120-LB2-FS17\M120-LB2-FS17\bin\Debug\M120-LB2-FS17.exe.config
+C:\Users\root\Desktop\M120\LB2-2017\M120-LB2-FS17\M120-LB2-FS17\bin\Debug\M120-LB2-FS17.exe
+C:\Users\root\Desktop\M120\LB2-2017\M120-LB2-FS17\M120-LB2-FS17\bin\Debug\M120-LB2-FS17.pdb
+C:\Users\root\Desktop\M120\LB2-2017\M120-LB2-FS17\M120-LB2-FS17\obj\Debug\M120-LB2-FS17.csprojResolveAssemblyReference.cache
+C:\Users\root\Desktop\M120\LB2-2017\M120-LB2-FS17\M120-LB2-FS17\obj\Debug\MainWindow.g.cs
+C:\Users\root\Desktop\M120\LB2-2017\M120-LB2-FS17\M120-LB2-FS17\obj\Debug\App.g.cs
+C:\Users\root\Desktop\M120\LB2-2017\M120-LB2-FS17\M120-LB2-FS17\obj\Debug\M120-LB2-FS17_MarkupCompile.cache
+C:\Users\root\Desktop\M120\LB2-2017\M120-LB2-FS17\M120-LB2-FS17\obj\Debug\M120-LB2-FS17_MarkupCompile.lref
+C:\Users\root\Desktop\M120\LB2-2017\M120-LB2-FS17\M120-LB2-FS17\obj\Debug\MainWindow.baml
+C:\Users\root\Desktop\M120\LB2-2017\M120-LB2-FS17\M120-LB2-FS17\obj\Debug\M120-LB2-FS17.g.resources
+C:\Users\root\Desktop\M120\LB2-2017\M120-LB2-FS17\M120-LB2-FS17\obj\Debug\M120_LB2_FS17.Properties.Resources.resources
+C:\Users\root\Desktop\M120\LB2-2017\M120-LB2-FS17\M120-LB2-FS17\obj\Debug\M120-LB2-FS17.csproj.GenerateResource.Cache
+C:\Users\root\Desktop\M120\LB2-2017\M120-LB2-FS17\M120-LB2-FS17\obj\Debug\M120-LB2-FS17.exe
+C:\Users\root\Desktop\M120\LB2-2017\M120-LB2-FS17\M120-LB2-FS17\obj\Debug\M120-LB2-FS17.pdb
+C:\Users\root\Desktop\M120\LB2-2017\M120-LB2-FS17 - Kino\M120-LB2-FS17\bin\Debug\M120-LB2-FS17.exe.config
+C:\Users\root\Desktop\M120\LB2-2017\M120-LB2-FS17 - Kino\M120-LB2-FS17\obj\Debug\M120-LB2-FS17.exe
+C:\Users\root\Desktop\M120\LB2-2017\M120-LB2-FS17 - Kino\M120-LB2-FS17\obj\Debug\M120-LB2-FS17.pdb
+C:\Users\root\Desktop\M120\LB2-2017\M120-LB2-FS17 - Kino\M120-LB2-FS17\bin\Debug\M120-LB2-FS17.exe
+C:\Users\root\Desktop\M120\LB2-2017\M120-LB2-FS17 - Kino\M120-LB2-FS17\bin\Debug\M120-LB2-FS17.pdb
+C:\Users\root\Desktop\M120\LB2-2017\M120-LB2-FS17 - Kino\M120-LB2-FS17\obj\Debug\M120-LB2-FS17.csprojResolveAssemblyReference.cache
+C:\Users\root\Desktop\M120\LB2-2017\M120-LB2-FS17 - Kino\M120-LB2-FS17\obj\Debug\MainWindow.g.cs
+C:\Users\root\Desktop\M120\LB2-2017\M120-LB2-FS17 - Kino\M120-LB2-FS17\obj\Debug\App.g.cs
+C:\Users\root\Desktop\M120\LB2-2017\M120-LB2-FS17 - Kino\M120-LB2-FS17\obj\Debug\M120-LB2-FS17_MarkupCompile.cache
+C:\Users\root\Desktop\M120\LB2-2017\M120-LB2-FS17 - Kino\M120-LB2-FS17\obj\Debug\M120-LB2-FS17_MarkupCompile.lref
+C:\Users\root\Desktop\M120\LB2-2017\M120-LB2-FS17 - Kino\M120-LB2-FS17\obj\Debug\MainWindow.baml
+C:\Users\root\Desktop\M120\LB2-2017\M120-LB2-FS17 - Kino\M120-LB2-FS17\obj\Debug\M120-LB2-FS17.g.resources
+C:\Users\root\Desktop\M120\LB2-2017\M120-LB2-FS17 - Kino\M120-LB2-FS17\obj\Debug\M120_LB2_FS17.Properties.Resources.resources
+C:\Users\root\Desktop\M120\LB2-2017\M120-LB2-FS17 - Kino\M120-LB2-FS17\obj\Debug\M120-LB2-FS17.csproj.GenerateResource.Cache
+C:\Users\sonny\Desktop\M120-LB2-FS17 - Autokino\M120-LB2-FS17 - Kino\M120-LB2-FS17\bin\Debug\M120-LB2-FS17.exe.config
+C:\Users\sonny\Desktop\M120-LB2-FS17 - Autokino\M120-LB2-FS17 - Kino\M120-LB2-FS17\obj\Debug\M120-LB2-FS17.exe
+C:\Users\sonny\Desktop\M120-LB2-FS17 - Autokino\M120-LB2-FS17 - Kino\M120-LB2-FS17\obj\Debug\M120-LB2-FS17.pdb
+C:\Users\sonny\Desktop\M120-LB2-FS17 - Autokino\M120-LB2-FS17 - Kino\M120-LB2-FS17\bin\Debug\M120-LB2-FS17.exe
+C:\Users\sonny\Desktop\M120-LB2-FS17 - Autokino\M120-LB2-FS17 - Kino\M120-LB2-FS17\bin\Debug\M120-LB2-FS17.pdb
+C:\Users\sonny\Desktop\M120-LB2-FS17 - Autokino\M120-LB2-FS17 - Kino\M120-LB2-FS17\obj\Debug\M120-LB2-FS17.csprojResolveAssemblyReference.cache
+C:\Users\sonny\Desktop\M120-LB2-FS17 - Autokino\M120-LB2-FS17 - Kino\M120-LB2-FS17\obj\Debug\Listview.g.cs
+C:\Users\sonny\Desktop\M120-LB2-FS17 - Autokino\M120-LB2-FS17 - Kino\M120-LB2-FS17\obj\Debug\MainWindow.g.cs
+C:\Users\sonny\Desktop\M120-LB2-FS17 - Autokino\M120-LB2-FS17 - Kino\M120-LB2-FS17\obj\Debug\App.g.cs
+C:\Users\sonny\Desktop\M120-LB2-FS17 - Autokino\M120-LB2-FS17 - Kino\M120-LB2-FS17\obj\Debug\M120-LB2-FS17_MarkupCompile.cache
+C:\Users\sonny\Desktop\M120-LB2-FS17 - Autokino\M120-LB2-FS17 - Kino\M120-LB2-FS17\obj\Debug\M120-LB2-FS17_MarkupCompile.lref
+C:\Users\sonny\Desktop\M120-LB2-FS17 - Autokino\M120-LB2-FS17 - Kino\M120-LB2-FS17\obj\Debug\Listview.baml
+C:\Users\sonny\Desktop\M120-LB2-FS17 - Autokino\M120-LB2-FS17 - Kino\M120-LB2-FS17\obj\Debug\MainWindow.baml
+C:\Users\sonny\Desktop\M120-LB2-FS17 - Autokino\M120-LB2-FS17 - Kino\M120-LB2-FS17\obj\Debug\M120-LB2-FS17.g.resources
+C:\Users\sonny\Desktop\M120-LB2-FS17 - Autokino\M120-LB2-FS17 - Kino\M120-LB2-FS17\obj\Debug\M120_LB2_FS17.Properties.Resources.resources
+C:\Users\sonny\Desktop\M120-LB2-FS17 - Autokino\M120-LB2-FS17 - Kino\M120-LB2-FS17\obj\Debug\M120-LB2-FS17.csproj.GenerateResource.Cache
+C:\Users\sonny\Desktop\M120-LB2-FS17 - Autokino\M120-LB2-FS17 - Kino\M120-LB2-FS17\obj\Debug\Detailview.g.cs
+C:\Users\sonny\Desktop\M120-LB2-FS17 - Autokino\M120-LB2-FS17 - Kino\M120-LB2-FS17\obj\Debug\Detailview.baml
+C:\Users\sonny\Desktop\M120-LB2-FS17 - Autokino\M120-LB2-FS17 - Kino\M120-LB2-FS17\obj\Debug\Overview.g.cs
+C:\Users\sonny\Desktop\M120-LB2-FS17 - Autokino\M120-LB2-FS17 - Kino\M120-LB2-FS17\obj\Debug\Overview.baml
+C:\Users\sonny\OneDrive\Dokumente\GitHub\Autokino\M120-LB2-FS17 - Kino\M120-LB2-FS17\obj\Debug\M120-LB2-FS17.csprojResolveAssemblyReference.cache
+C:\Users\sonny\OneDrive\Dokumente\GitHub\Autokino\M120-LB2-FS17 - Kino\M120-LB2-FS17\obj\Debug\Detailview.g.cs
+C:\Users\sonny\OneDrive\Dokumente\GitHub\Autokino\M120-LB2-FS17 - Kino\M120-LB2-FS17\obj\Debug\Listview.g.cs
+C:\Users\sonny\OneDrive\Dokumente\GitHub\Autokino\M120-LB2-FS17 - Kino\M120-LB2-FS17\obj\Debug\MainWindow.g.cs
+C:\Users\sonny\OneDrive\Dokumente\GitHub\Autokino\M120-LB2-FS17 - Kino\M120-LB2-FS17\obj\Debug\Overview.g.cs
+C:\Users\sonny\OneDrive\Dokumente\GitHub\Autokino\M120-LB2-FS17 - Kino\M120-LB2-FS17\obj\Debug\App.g.cs
+C:\Users\sonny\OneDrive\Dokumente\GitHub\Autokino\M120-LB2-FS17 - Kino\M120-LB2-FS17\obj\Debug\M120-LB2-FS17_MarkupCompile.cache
+C:\Users\sonny\OneDrive\Dokumente\GitHub\Autokino\M120-LB2-FS17 - Kino\M120-LB2-FS17\obj\Debug\M120-LB2-FS17_MarkupCompile.lref
+C:\Users\sonny\OneDrive\Dokumente\GitHub\Autokino\M120-LB2-FS17 - Kino\M120-LB2-FS17\obj\Debug\M120-LB2-FS17.exe
+C:\Users\sonny\OneDrive\Dokumente\GitHub\Autokino\M120-LB2-FS17 - Kino\M120-LB2-FS17\obj\Debug\M120-LB2-FS17.pdb
+C:\Users\sonny\OneDrive\Dokumente\GitHub\Autokino\M120-LB2-FS17 - Kino\M120-LB2-FS17\bin\Debug\M120-LB2-FS17.exe.config
