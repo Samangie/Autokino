@@ -86,7 +86,7 @@ namespace M120_LB2_FS17
 
         private void zeigeListe_Click(object sender, RoutedEventArgs e)
         {
-            Listview liste = new Listview(); 
+            Listview liste = new Listview();
             liste.HorizontalAlignment = HorizontalAlignment.Left;
             liste.VerticalAlignment = VerticalAlignment.Top;
             inhalt.Children.Clear();
@@ -100,6 +100,17 @@ namespace M120_LB2_FS17
             overview.VerticalAlignment = VerticalAlignment.Top;
             inhalt.Children.Clear();
             inhalt.Children.Add(overview);
+        }
+
+        private void addFilm_Click(object sender, RoutedEventArgs e)
+        {
+            String filmname = tbfilm.Text;
+            Film film = new Film();
+            film.Name = filmname;
+            Bibliothek.Film_Neu(film);
+
+            tbfilm.Clear();
+
         }
     }
 }

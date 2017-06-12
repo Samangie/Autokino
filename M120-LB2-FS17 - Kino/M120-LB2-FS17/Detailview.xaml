@@ -8,7 +8,6 @@
              d:DesignHeight="200" Width="530">
     <DockPanel x:Name="inhalt" Height="200" VerticalAlignment="Top">
         <StackPanel Background="Gray" Height="35" DockPanel.Dock="Top" Orientation="Horizontal">
-            <Button x:Name="neu" Content="Neu" Margin="5,7,0,0" VerticalAlignment="Top" />
             <Button x:Name="speichern" Content="Speichern" Margin="5,7,0,0" VerticalAlignment="Top" IsDefault="True" Click="speichern_Click" />
             <Button x:Name="abbrechen" Content="Abbrechen" Margin="5,7,0,0" VerticalAlignment="Top" IsCancel="True" />
         </StackPanel>

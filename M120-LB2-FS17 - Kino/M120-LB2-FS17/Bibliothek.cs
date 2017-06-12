@@ -36,7 +36,7 @@ namespace M120_LB2_FS17
         }
         public static Film Film_nach_Name(String filmname)
         {
-            return Film selctedRes = (from element in Film where element.Name == filmname select element).FirstOrDefault();
+            return (from element in Film where element.Name == filmname select element).FirstOrDefault();
         }
         public static Film Film_nach_ID(Int32 id)
         {
@@ -76,6 +76,7 @@ namespace M120_LB2_FS17
         #region Reservation
         public static void Reservation_Neu(Reservation reservation)
         {
+
             if (Reservation == null)
             {
                 Reservation = new List<M120_LB2_FS17.Reservation>();
@@ -84,27 +85,26 @@ namespace M120_LB2_FS17
             {
                 reservation.ID = IDReservation;
                 IDReservation++;
+
+                Reservation.Add(reservation);
+                // Nachtragen Film
+                Film_nach_ID(reservation.Film.ID).Reservationen.Add(reservation);
+                // Nachtragen Platz
+                Platz_nach_ID(reservation.Platz.ID).Reservationen.Add(reservation);
             }
-            Reservation.Add(reservation);
-            // Nachtragen Film
-            Film_nach_ID(reservation.Film.ID).Reservationen.Add(reservation);
-            // Nachtragen Platz
-            Platz_nach_ID(reservation.Platz.ID).Reservationen.Add(reservation);
-        }
-
-        public static void Reservation_Update(int id, String kunde, String pos, String row, String film, String date)
-        {
-
-            Reservation selctedRes = (from element in Reservation where element.ID == id select element).FirstOrDefault();
-            if (selctedRes != null)
+            else
             {
-                selctedRes.Kunde = kunde;
-                selctedRes.Platz = Bibliothek.Platz_nach_PosRes(Convert.ToInt16(pos), Convert.ToInt16(row));
-                selctedRes.Film = Bibliothek.Film_nach_Name(film);
-                selctedRes.Datum = Convert.ToDateTime(date);  
+                Reservation selctedRes = (from element in Reservation where element.ID == reservation.ID select element).FirstOrDefault();
+                if (selctedRes != null)
+                {
+                    selctedRes.Kunde = reservation.Kunde;
+                    selctedRes.Platz = reservation.Platz;
+                    selctedRes.Film = reservation.Film;
+                    selctedRes.Datum = reservation.Datum;
+                }
             }
-
         }
+
 
         public static List<Reservation> Reservation_Alle()
         {
@@ -114,6 +114,10 @@ namespace M120_LB2_FS17
         public static Reservation Reservation_nach_ID(Int32 id)
         {
             return (from element in Reservation where element.ID == id select element).FirstOrDefault();
+        }
+        public static Reservation Reservation_nach_Platz(Platz platz)
+        {
+            return (from element in Reservation where element.Platz == platz select element).FirstOrDefault();
         }
         public static List<Reservation> Reservation_nach_Film_Datum(Film film, DateTime datum)
         {

@@ -20,14 +20,6 @@ namespace M120_LB2_FS17
     /// </summary>
     public partial class Listview : UserControl
     {
-        enum Module
-        {
-            Leer,
-            Liste,
-            Detail,
-            Karte
-        }
-        private Module aktuellesModul;
 
         public Listview()
         {

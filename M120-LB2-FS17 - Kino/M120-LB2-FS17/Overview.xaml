@@ -7,11 +7,7 @@
              mc:Ignorable="d" 
              d:DesignHeight="350" d:DesignWidth="530">
 
-    <DataGrid AutoGenerateColumns="False" Name="DataGridOverview" CanUserAddRows="True" ItemsSource="{Binding OverviewBinding}" >
-        <DataGrid.ItemContainerStyle>
-            <Style TargetType="DataGridRow">
-                
-            </Style>
-        </DataGrid.ItemContainerStyle>
-    </DataGrid>
+    <Grid x:Name="grid">
+        
+    </Grid>
 </UserControl>
