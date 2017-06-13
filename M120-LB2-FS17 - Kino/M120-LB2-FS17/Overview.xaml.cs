@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.IO;
 
 namespace M120_LB2_FS17
 {
@@ -20,11 +21,18 @@ namespace M120_LB2_FS17
     /// </summary>
     public partial class Overview : UserControl
     {
+
         public Overview()
         {
             InitializeComponent();
 
-            generateField(2, 3);
+
+        }
+        public Overview(int column, int row)
+        {
+            InitializeComponent();
+
+            generateField(column, row);
         }
 
         private void generateField(int column, int row)
@@ -68,13 +76,15 @@ namespace M120_LB2_FS17
                     Grid.SetRow(field, i);
                     Grid.SetColumn(field, j);
 
-                    Platz place = new Platz();
-                    place.ID = counter;
-                    place.Reihe = Convert.ToInt16(currentRow);
-                    place.Position = Convert.ToInt16(currentColumn);
-                    place.Film = Bibliothek.Film_nach_ID(1);
-                    Bibliothek.Platz_Neu(place);
-                    counter++;
+                        Platz place = new Platz();
+                        place.ID = counter;
+                        place.Reihe = Convert.ToInt16(currentRow);
+                        place.Position = Convert.ToInt16(currentColumn);
+                        place.Film = Bibliothek.Film_nach_ID(1);
+                        Bibliothek.Platz_Neu(place);
+                        counter++;
+
+
 
                 }
 
@@ -93,5 +103,7 @@ namespace M120_LB2_FS17
             grid.Children.Clear();
             grid.Children.Add(detail);
         }
+
+
     }
 }

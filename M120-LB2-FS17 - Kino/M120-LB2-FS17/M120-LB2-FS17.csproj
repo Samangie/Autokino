@@ -61,8 +61,14 @@
     </Compile>
     <Compile Include="Field.cs" />
     <Compile Include="Film.cs" />
+    <Compile Include="KinoConfig.xaml.cs">
+      <DependentUpon>KinoConfig.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Listview.xaml.cs">
       <DependentUpon>Listview.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Menu.xaml.cs">
+      <DependentUpon>Menu.xaml</DependentUpon>
     </Compile>
     <Compile Include="Overview.xaml.cs">
       <DependentUpon>Overview.xaml</DependentUpon>
@@ -70,6 +76,10 @@
     <Compile Include="Platz.cs" />
     <Compile Include="Reservation.cs" />
     <Page Include="Detailview.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="KinoConfig.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -89,6 +99,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Menu.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Overview.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

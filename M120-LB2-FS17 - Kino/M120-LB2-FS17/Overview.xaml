@@ -6,18 +6,8 @@
              xmlns:local="clr-namespace:M120_LB2_FS17"
              mc:Ignorable="d" 
              d:DesignHeight="350" d:DesignWidth="530">
-    <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="*" />
-            <RowDefinition Height="50" />
-        </Grid.RowDefinitions>
-        <Grid x:Name="grid" Grid.Row="0">
+    <Grid x:Name="grid" Grid.Row="0">
 
-        </Grid>
-        <Canvas Grid.Row="1">
-            <Button Width="3*" Height="50" />
-            <Button Width="3*" Height="50" />
-            <Button Width="3*" Height="50" />
-        </Canvas>
+
     </Grid>
 </UserControl>
