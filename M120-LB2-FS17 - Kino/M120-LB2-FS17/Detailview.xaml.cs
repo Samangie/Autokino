@@ -37,6 +37,7 @@ namespace M120_LB2_FS17
             }else
             {
                 fillFilminCB();
+                fillPlatzinCB();
             }
 
         }
@@ -46,11 +47,10 @@ namespace M120_LB2_FS17
             Reservation reservation = Bibliothek.Reservation_nach_ID(selectedid);
 
             fillFilminCB();
-
+            fillPlatzinCB();
             lblId.Content = reservation.ID;
             tbKunde.Text = reservation.Kunde;
-            tbPlatzPos.Text = Convert.ToString(reservation.Platz.Position);
-            tbPlatzReihe.Text = Convert.ToString(reservation.Platz.Reihe);
+            cbPlatz.SelectedIndex = cbFilm.Items.IndexOf(1);
             cbFilm.SelectedIndex = cbFilm.Items.IndexOf(reservation.Film.Name);
             tbDatum.Text = Convert.ToString(reservation.Datum);
         }
@@ -61,6 +61,16 @@ namespace M120_LB2_FS17
                 cbFilm.Items.Add(film.Name);
             }
         }
+        private void fillPlatzinCB()
+        {
+            foreach (Platz platz in Bibliothek.Platz_Alle())
+            {
+                ComboBoxItem cbItem = new ComboBoxItem();
+                cbItem.Content = platz.Position + ":" + platz.Reihe;
+                cbItem.Tag = platz.ID;
+                cbPlatz.Items.Add(cbItem);
+            }
+        }
 
         private void speichern_Click(object sender, RoutedEventArgs e)
         {
@@ -69,9 +79,8 @@ namespace M120_LB2_FS17
             reservation.ID = Convert.ToInt16(lblId.Content);
             reservation.Kunde = tbKunde.Text;
             reservation.Film = Bibliothek.Film_nach_Name(Convert.ToString(cbFilm.SelectedItem));
-            reservation.Platz = Bibliothek.Platz_nach_PosRes(Convert.ToInt16(tbPlatzPos.Text), Convert.ToInt16(tbPlatzReihe.Text));
+            reservation.Platz = Bibliothek.Platz_nach_ID(Convert.ToInt16(((ComboBoxItem) cbPlatz.SelectedItem).Tag));
             reservation.Datum = Convert.ToDateTime(tbDatum.Text);
-            Console.WriteLine("Platz:" + tbPlatzPos.Text + " + " + tbPlatzReihe.Text);
             Bibliothek.Reservation_Neu(reservation);
 
             zeigeListe();

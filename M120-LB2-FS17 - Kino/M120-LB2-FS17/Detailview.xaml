@@ -32,10 +32,9 @@
 
                 <Label x:Name="lblId" Grid.Row="0" Grid.Column="1" Content="0"></Label>
                 <TextBox x:Name="tbKunde" Grid.Column="1" Grid.Row="1" HorizontalAlignment="Left" Width="140" Height="20" Grid.ColumnSpan="2" />
-                <TextBox x:Name="tbPlatzPos" Grid.Row="2" Grid.Column="1" HorizontalAlignment="Left" Width="55" Height="20" Margin="0,5,0,6"/>
+                <ComboBox Grid.Row="2" Grid.Column="1" x:Name="cbPlatz" HorizontalAlignment="Left" Width="140" Height="20" />
                 <ComboBox Grid.Row="3" x:Name="cbFilm" Grid.Column="1" HorizontalAlignment="Left" Width="140" Height="20" Grid.ColumnSpan="2" Margin="0,5,0,6"/>
                 <DatePicker x:Name="tbDatum" Grid.Row="4" Grid.Column="1" HorizontalAlignment="Left" Width="140" Height="25" Grid.ColumnSpan="2" Margin="0,3"></DatePicker>
-                <TextBox x:Name="tbPlatzReihe" Grid.Row="2" Grid.Column="1" HorizontalAlignment="Left" Width="60" Height="20" Margin="80,5,0,6"/>
 
             </Grid>
         </ScrollViewer>

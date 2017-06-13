@@ -52,7 +52,7 @@ namespace M120_LB2_FS17
 
             //Grid als Child-Element des Canvas ("parkflaeche") definieren
             grid.Children.Add(placegrid);
-
+            int counter = 1;
             for (int i = 0; i < row; i++)
             {
 
@@ -69,9 +69,12 @@ namespace M120_LB2_FS17
                     Grid.SetColumn(field, j);
 
                     Platz place = new Platz();
+                    place.ID = counter;
                     place.Reihe = Convert.ToInt16(currentRow);
                     place.Position = Convert.ToInt16(currentColumn);
                     place.Film = Bibliothek.Film_nach_ID(1);
+                    Bibliothek.Platz_Neu(place);
+                    counter++;
 
                 }
 
