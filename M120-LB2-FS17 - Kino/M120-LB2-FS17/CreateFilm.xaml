@@ -1,0 +1,19 @@
+﻿<UserControl x:Class="M120_LB2_FS17.CreateFilm"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:M120_LB2_FS17"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid x:Name="inhalt">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*" />
+            <RowDefinition Height="50" />
+            <RowDefinition Height="2*" />
+        </Grid.RowDefinitions>
+        <Label Grid.Row="0" x:Name="title" Content="Film erstellen" HorizontalAlignment="Center"  VerticalAlignment="Bottom" FontSize="20"  />
+        <TextBox Grid.Row="1" x:Name="tbfilm" HorizontalAlignment="Center" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="120"/>
+        <Button Grid.Row="2" x:Name="addFilm" Content="Film hinzufügen" HorizontalAlignment="Center"  VerticalAlignment="Top" Width="97" Click="addFilm_Click" Height="26"  />
+    </Grid>
+</UserControl>

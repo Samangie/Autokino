@@ -27,13 +27,36 @@ namespace M120_LB2_FS17
 
         private void confirm_Click(object sender, RoutedEventArgs e)
         {
-            int column = Convert.ToInt16(txtColumn.Text);
-            int row = Convert.ToInt16(txtRow.Text);
-            Menu menu = new Menu(column, row);
-            menu.HorizontalAlignment = HorizontalAlignment.Left;
-            menu.VerticalAlignment = VerticalAlignment.Top;
-            inhalt.Children.Clear();
-            inhalt.Children.Add(menu);
+            if (checkInput(txtColumn.Text) && checkInput(txtRow.Text))
+            {
+                int column = Convert.ToInt16(txtColumn.Text);
+                int row = Convert.ToInt16(txtRow.Text);
+                Menu menu = new Menu(column, row);
+                menu.HorizontalAlignment = HorizontalAlignment.Left;
+                menu.VerticalAlignment = VerticalAlignment.Top;
+                kinoinhalt.Children.Clear();
+                kinoinhalt.Children.Add(menu);
+            }
+            
+        }
+         
+        private bool checkInput(String value)
+        {
+            if (String.IsNullOrWhiteSpace(value))
+            {
+                MessageBox.Show("Bitte füllen Sie die Felder aus!");
+                return false;
+            }
+            try
+            {
+                Convert.ToInt16(value);
+            }catch
+            {
+                MessageBox.Show("Bitte verwenden Sie Zahlen!");
+                return false;
+            }
+            return true;
+            
         }
     }
 }

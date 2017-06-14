@@ -8,9 +8,9 @@ namespace M120_LB2_FS17
 {
     static class Bibliothek
     {
-        private static List<Platz> Platz { get; set; }
-        private static List<Film> Film { get; set; }
-        private static List<Reservation> Reservation { get; set; }
+        private static List<Platz> Platz { get; set; } = new List<M120_LB2_FS17.Platz>();
+        private static List<Film> Film { get; set; } = new List<M120_LB2_FS17.Film>();
+        private static List<Reservation> Reservation { get; set; } = new List<M120_LB2_FS17.Reservation>();
 
         private static Int32 IDPlatz = 1;
         private static Int32 IDFilm = 1;

@@ -6,9 +6,9 @@
         xmlns:local="clr-namespace:M120_LB2_FS17"
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="530">
-    <Canvas x:Name="inhalt">
-        <Button x:Name="addFilm" Content="Film hinzufügen" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Click="addFilm_Click" RenderTransformOrigin="0.499,-1.406" Canvas.Top="36"/>
-        <TextBox x:Name="tbfilm" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+    <Canvas x:Name="inhalt" >
+        <Label Grid.Row="0" x:Name="title" Content="Film erstellen" HorizontalAlignment="Center"  VerticalAlignment="Center" FontSize="20" Canvas.Left="10" Canvas.Top="10"   />
+        <TextBox Grid.Row="1" x:Name="tbfilm" HorizontalAlignment="Center" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="120" Canvas.Left="16" Canvas.Top="47"/>
+        <Button Grid.Row="2" x:Name="addFilm" Content="Film hinzufügen" HorizontalAlignment="Center"  VerticalAlignment="Center" Width="97" Click="addFilm_Click" Height="26" Canvas.Top="80" Canvas.Left="17"  />
     </Canvas>
-
 </Window>

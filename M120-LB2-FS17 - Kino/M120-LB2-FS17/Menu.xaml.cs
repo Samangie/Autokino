@@ -31,8 +31,7 @@ namespace M120_LB2_FS17
             this.row = row;
             InitializeComponent();
             loadOverview();
-        
-
+       
         }
 
         private void showList_Click(object sender, RoutedEventArgs e)
@@ -40,6 +39,7 @@ namespace M120_LB2_FS17
             Listview liste = new Listview();
             liste.HorizontalAlignment = HorizontalAlignment.Left;
             liste.VerticalAlignment = VerticalAlignment.Top;
+            Console.WriteLine("safa" + inhalt.Width + " " + inhalt.Height);
             inhalt.Children.Clear();
             inhalt.Children.Add(liste);
         }
@@ -47,6 +47,15 @@ namespace M120_LB2_FS17
         private void showOverview_Click(object sender, RoutedEventArgs e)
         {
             loadOverview();
+        }
+
+        private void addFilm_Click(object sender, RoutedEventArgs e)
+        {
+            CreateFilm film = new CreateFilm();
+            film.HorizontalAlignment = HorizontalAlignment.Center;
+            film.VerticalAlignment = VerticalAlignment.Center;
+            inhalt.Children.Clear();
+            inhalt.Children.Add(film);
         }
 
         private void loadOverview()

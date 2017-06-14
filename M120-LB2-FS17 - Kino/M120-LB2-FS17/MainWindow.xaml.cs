@@ -23,7 +23,7 @@ namespace M120_LB2_FS17
         public MainWindow()
         {
             InitializeComponent();
-            datenBereitstellen();
+            //datenBereitstellen();
         }
 
         #region Testdaten
@@ -86,12 +86,15 @@ namespace M120_LB2_FS17
         private void addFilm_Click(object sender, RoutedEventArgs e)
         {
             String filmname = tbfilm.Text;
-            Film film = new Film();
-            film.Name = filmname;
-            Bibliothek.Film_Neu(film);
 
-            loadKinoConfig();
+            if (checkInput(filmname))
+            {
+                Film film = new Film();
+                film.Name = filmname;
+                Bibliothek.Film_Neu(film);
 
+                loadKinoConfig();
+            }
         }
 
         private void loadKinoConfig()
@@ -101,6 +104,17 @@ namespace M120_LB2_FS17
             kinoConfig.VerticalAlignment = VerticalAlignment.Top;
             inhalt.Children.Clear();
             inhalt.Children.Add(kinoConfig);
+        }
+
+        private bool checkInput(String value)
+        {
+            if (String.IsNullOrWhiteSpace(value))
+            {
+                MessageBox.Show("Bitte füllen Sie das Feld aus!");
+                return false;
+            }
+            return true;
+
         }
     }
 }

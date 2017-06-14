@@ -5,8 +5,8 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:M120_LB2_FS17"
              mc:Ignorable="d" 
-             d:DesignHeight="350" d:DesignWidth="530">
-    <Grid x:Name="grid" Grid.Row="0">
+             d:DesignHeight="270" d:DesignWidth="530">
+    <Grid x:Name="grid">
 
 
     </Grid>

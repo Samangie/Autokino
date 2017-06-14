@@ -5,11 +5,16 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:M120_LB2_FS17"
              mc:Ignorable="d" 
-             d:DesignHeight="300" d:DesignWidth="300">
-    <Grid x:Name="inhalt">
-        <Button x:Name="confirm" Content="Kino erstellen" HorizontalAlignment="Left" Margin="102,172,0,0" VerticalAlignment="Top" Width="87" Click="confirm_Click"/>
-        <TextBox x:Name="txtColumn" HorizontalAlignment="Left" Height="23" Margin="85,107,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="txtRow" HorizontalAlignment="Left" Height="23" Margin="85,135,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-
+             d:DesignHeight="350" d:DesignWidth="530">
+    <Grid x:Name="kinoinhalt">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*" />
+            <RowDefinition Height="60" />
+            <RowDefinition Height="2*" />
+        </Grid.RowDefinitions>
+        <Label Grid.Row="0" x:Name="title" Content="Kino erstellen" HorizontalAlignment="Center"  VerticalAlignment="Bottom" FontSize="20"  />
+        <TextBox Grid.Row="1" x:Name="txtColumn" HorizontalAlignment="Center" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" />
+        <TextBox Grid.Row="1" x:Name="txtRow" HorizontalAlignment="Center" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Bottom" Width="120" Margin="0,0,0,7"/>
+        <Button Grid.Row="2" x:Name="confirm" Content="Kino erstellen" HorizontalAlignment="Center"  VerticalAlignment="Top" Width="97" Height="26" Click="confirm_Click"/>
     </Grid>
 </UserControl>

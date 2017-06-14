@@ -26,39 +26,34 @@ namespace M120_LB2_FS17
         {
             InitializeComponent();
 
-
         }
         public Overview(int column, int row)
         {
             InitializeComponent();
-
             generateField(column, row);
+
         }
 
         private void generateField(int column, int row)
         {
             Grid placegrid = new Grid();
-
+ 
             placegrid.Width = 530;
-            placegrid.Height = 320;
+            placegrid.Height = 290;
             placegrid.Name = "placegrid";
             GridLengthConverter converter = new GridLengthConverter();
 
-            //RowDefinitions für die Zeilen; alle werden gleich hoch
             for (int i = 0; i < row; i++)
             {
                 placegrid.RowDefinitions.Add(new RowDefinition() { Height = new GridLength(1,GridUnitType.Star)});
             }
 
-
-            //ColumnDefinitions für die Spalten; alle werden gleich breit
             for (int j = 0; j < column; j++)
             {
                 placegrid.ColumnDefinitions.Add(new ColumnDefinition() { Width = new GridLength(1, GridUnitType.Star) });
 
             }
 
-            //Grid als Child-Element des Canvas ("parkflaeche") definieren
             grid.Children.Add(placegrid);
             int counter = 1;
             for (int i = 0; i < row; i++)
@@ -66,16 +61,30 @@ namespace M120_LB2_FS17
 
                 for (int j = 0; j < column; j++)
                 {
+                    int counterPlatz = 0;
                     int currentColumn = j + 1;
                     int currentRow = i + 1;
 
                     Button field = new Button();
                     field.Click += showDetail;
-                    field.Content = currentRow + ":" + currentColumn;
+                    field.Content = currentColumn + ":" + currentRow;
                     placegrid.Children.Add(field);
                     Grid.SetRow(field, i);
                     Grid.SetColumn(field, j);
 
+                    try
+                    {
+                        foreach (Platz Platz in Bibliothek.Platz_Alle())
+                        {
+                            counterPlatz++;
+                        }
+                    }
+                    catch
+                    {
+                        counterPlatz = 0;
+                    }
+                    if (counterPlatz <= (column * row))
+                    {
                         Platz place = new Platz();
                         place.ID = counter;
                         place.Reihe = Convert.ToInt16(currentRow);
@@ -83,8 +92,16 @@ namespace M120_LB2_FS17
                         place.Film = Bibliothek.Film_nach_ID(1);
                         Bibliothek.Platz_Neu(place);
                         counter++;
+                    }
 
-
+                    if(existRes(currentRow, currentColumn))
+                    {
+                        field.Background = Brushes.PaleVioletRed;
+                    }else
+                    {
+                        field.Background = Brushes.LightGreen;
+                    }
+                        
 
                 }
 
@@ -104,6 +121,17 @@ namespace M120_LB2_FS17
             grid.Children.Add(detail);
         }
 
+        public bool existRes(int currentRow, int currenColumn)
+        {
+            Platz place = Bibliothek.Platz_nach_PosRes(currenColumn, currentRow);
 
+            Reservation reservation = Bibliothek.Reservation_nach_Platz(place);
+
+            if (reservation == null)
+            {
+                return false;
+            }
+            return true;
+        }
     }
 }
