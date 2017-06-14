@@ -6,15 +6,10 @@
              xmlns:local="clr-namespace:M120_LB2_FS17"
              mc:Ignorable="d" 
              d:DesignHeight="350" d:DesignWidth="530">
-    <Grid x:Name="kinoinhalt">
-        <Grid.RowDefinitions>
-            <RowDefinition Height="2*" />
-            <RowDefinition Height="60" />
-            <RowDefinition Height="2*" />
-        </Grid.RowDefinitions>
-        <Label Grid.Row="0" x:Name="title" Content="Kino erstellen" HorizontalAlignment="Center"  VerticalAlignment="Bottom" FontSize="20"  />
-        <TextBox Grid.Row="1" x:Name="txtColumn" HorizontalAlignment="Center" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" />
-        <TextBox Grid.Row="1" x:Name="txtRow" HorizontalAlignment="Center" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Bottom" Width="120" Margin="0,0,0,7"/>
-        <Button Grid.Row="2" x:Name="confirm" Content="Kino erstellen" HorizontalAlignment="Center"  VerticalAlignment="Top" Width="97" Height="26" Click="confirm_Click"/>
-    </Grid>
+    <Canvas x:Name="kinoinhalt">
+        <Label x:Name="title" Content="Kino erstellen"  FontSize="20" Canvas.Left="10" Canvas.Top="10" />
+        <TextBox  x:Name="txtColumn"  Height="23" TextWrapping="Wrap" Text="" Width="120" Canvas.Top="47" Canvas.Left="16"   />
+        <TextBox  x:Name="txtRow"  Height="23" TextWrapping="Wrap" Text="" Width="120" Canvas.Left="16" Canvas.Top="75"/>
+        <Button x:Name="confirm" Content="Kino erstellen" Canvas.Top="107" Canvas.Left="17" Width="97" Height="26" Click="confirm_Click"/>
+    </Canvas>
 </UserControl>

@@ -54,7 +54,7 @@ namespace M120_LB2_FS17
             Grid placegrid = new Grid();
  
             placegrid.Width = 530;
-            placegrid.Height = 290;
+           // placegrid.Height = 200;
             placegrid.Name = "placegrid";
             GridLengthConverter converter = new GridLengthConverter();
 
@@ -141,7 +141,6 @@ namespace M120_LB2_FS17
             Platz place = Bibliothek.Platz_nach_PosRes(currenColumn, currentRow);
 
             Film filmData = Bibliothek.Film_nach_Name(film);
-            Console.Write("Fgil " + film);
 
             Reservation reservation = Bibliothek.Reservation_nach_Film_Datum_Platz(filmData, date, place);
 

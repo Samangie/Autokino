@@ -46,9 +46,8 @@ namespace M120_LB2_FS17
                 Listview liste = new Listview();
                 liste.HorizontalAlignment = HorizontalAlignment.Left;
                 liste.VerticalAlignment = VerticalAlignment.Top;
-                Console.WriteLine("safa" + inhalt.Width + " " + inhalt.Height);
-                inhalt.Children.Clear();
-                inhalt.Children.Add(liste);
+                inhaltmenu.Children.Clear();
+                inhaltmenu.Children.Add(liste);
             }else
             {
                 MessageBox.Show("Bitte erstellen Sie eine Reservation!");
@@ -64,10 +63,10 @@ namespace M120_LB2_FS17
         private void addFilm_Click(object sender, RoutedEventArgs e)
         {
             CreateFilm film = new CreateFilm();
-            film.HorizontalAlignment = HorizontalAlignment.Center;
-            film.VerticalAlignment = VerticalAlignment.Center;
-            inhalt.Children.Clear();
-            inhalt.Children.Add(film);
+            film.HorizontalAlignment = HorizontalAlignment.Left;
+            film.VerticalAlignment = VerticalAlignment.Top;
+            inhaltmenu.Children.Clear();
+            inhaltmenu.Children.Add(film);
         }
 
         private void loadOverview()
@@ -75,8 +74,8 @@ namespace M120_LB2_FS17
             Overview overview = new Overview(column, row);
             overview.HorizontalAlignment = HorizontalAlignment.Left;
             overview.VerticalAlignment = VerticalAlignment.Top;
-            inhalt.Children.Clear();
-            inhalt.Children.Add(overview);
+            inhaltmenu.Children.Clear();
+            inhaltmenu.Children.Add(overview);
         }
     }
 }

@@ -7,13 +7,9 @@
              mc:Ignorable="d" 
              d:DesignHeight="300" d:DesignWidth="530">
     <ScrollViewer x:Name="inhalt" Grid.Column="1" HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Disabled">
-        <Grid>
-            <Grid.RowDefinitions>
-                <RowDefinition Height="50" />
-                <RowDefinition Height="*" />
-            </Grid.RowDefinitions>
-            <Label Grid.Row="0" Height="50" VerticalAlignment="Center" Content="Reservationen" HorizontalAlignment="Center" FontSize="28" Margin="0" Width="190"/>
-            <DataGrid Grid.Row="1" AutoGenerateColumns="False" Name="DataGridTest" CanUserAddRows="True" ItemsSource="{Binding TestBinding}" Grid.RowSpan="2" HorizontalAlignment="Center" VerticalAlignment="Top">
+        <DockPanel>
+            <Label Grid.Row="0" Height="50" DockPanel.Dock="Top" VerticalAlignment="Center" Content="Reservationen" HorizontalAlignment="Center" FontSize="28" Margin="0" Width="190"/>
+            <DataGrid Grid.Row="1" AutoGenerateColumns="False" Name="DataGridTest" CanUserAddRows="True" ItemsSource="{Binding TestBinding}" Grid.RowSpan="2" VerticalAlignment="Top">
                 <DataGrid.Columns >
                     <DataGridTextColumn Header="ID" IsReadOnly="True" Binding="{Binding Path=ID}" Width="100" ></DataGridTextColumn>
                     <DataGridTextColumn Header="Kunde" IsReadOnly="True" Binding="{Binding Path=Kunde}" Width="100"></DataGridTextColumn>
@@ -28,6 +24,6 @@
                 </DataGrid.ItemContainerStyle>
             </DataGrid>
 
-        </Grid>
+        </DockPanel>
     </ScrollViewer>
 </UserControl>

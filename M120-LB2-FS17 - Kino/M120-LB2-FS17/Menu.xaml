@@ -6,14 +6,14 @@
              xmlns:local="clr-namespace:M120_LB2_FS17"
              mc:Ignorable="d" 
              d:DesignHeight="350" d:DesignWidth="530">
-    <StackPanel  x:Name="content">
-        <Grid x:Name="inhalt" MinHeight="200" >
+    <DockPanel  x:Name="content">
+        <WrapPanel  x:Name="toolbar"  Height="55" DockPanel.Dock="Top" >
+            <Button x:Name="showList" Canvas.Right="10" Canvas.Top="10" Margin="10 10 10 10" Width="84" Height="35" Content="Listview" Click="showList_Click" />
+            <Button x:Name="showOverview" Canvas.Left="213" Canvas.Top="10" Margin="10 10 10 10" Width="84" Height="35" Content="Overview" Click="showOverview_Click" />
+            <Button x:Name="addFilm" Width="84" Height="35" Content="Neuer Film" Margin="10 10 10 10" Click="addFilm_Click" />
+        </WrapPanel>
+        <Grid x:Name="inhaltmenu" DockPanel.Dock="Bottom">
 
         </Grid>
-        <Canvas x:Name="toolbar"  Height="50">
-            <Button x:Name="showList" Canvas.Right="10" Width="100" Height="50" Content="Listview" Click="showList_Click" />
-            <Button x:Name="showOverview" Canvas.Left="213" Width="100" Height="50" Content="Overview" Click="showOverview_Click" />
-            <Button x:Name="addFilm" Canvas.Left="10" Width="100" Height="50" Content="Neuer Film" Click="addFilm_Click" />
-        </Canvas>
-    </StackPanel>
+    </DockPanel>
 </UserControl>

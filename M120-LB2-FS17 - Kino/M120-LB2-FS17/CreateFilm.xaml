@@ -5,15 +5,10 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:M120_LB2_FS17"
              mc:Ignorable="d" 
-             d:DesignHeight="300" d:DesignWidth="300">
-    <Grid x:Name="inhalt">
-        <Grid.RowDefinitions>
-            <RowDefinition Height="2*" />
-            <RowDefinition Height="50" />
-            <RowDefinition Height="2*" />
-        </Grid.RowDefinitions>
-        <Label Grid.Row="0" x:Name="title" Content="Film erstellen" HorizontalAlignment="Center"  VerticalAlignment="Bottom" FontSize="20"  />
-        <TextBox Grid.Row="1" x:Name="tbfilm" HorizontalAlignment="Center" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="120"/>
-        <Button Grid.Row="2" x:Name="addFilm" Content="Film hinzufügen" HorizontalAlignment="Center"  VerticalAlignment="Top" Width="97" Click="addFilm_Click" Height="26"  />
-    </Grid>
+             d:DesignHeight="350" d:DesignWidth="530">
+    <Canvas x:Name="inhalt">
+        <Label Grid.Row="0" x:Name="title" Content="Film erstellen" HorizontalAlignment="Center"  VerticalAlignment="Center" FontSize="20" Canvas.Left="10" Canvas.Top="10"   />
+        <TextBox Grid.Row="1" x:Name="tbfilm" HorizontalAlignment="Center" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="120" Canvas.Left="16" Canvas.Top="47"/>
+        <Button Grid.Row="2" x:Name="addFilm" Content="Film hinzufügen" HorizontalAlignment="Center"  VerticalAlignment="Center" Width="97" Click="addFilm_Click" Height="26" Canvas.Top="80" Canvas.Left="17"  />
+    </Canvas>
 </UserControl>
