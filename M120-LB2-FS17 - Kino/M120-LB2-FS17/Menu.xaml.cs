@@ -36,12 +36,24 @@ namespace M120_LB2_FS17
 
         private void showList_Click(object sender, RoutedEventArgs e)
         {
-            Listview liste = new Listview();
-            liste.HorizontalAlignment = HorizontalAlignment.Left;
-            liste.VerticalAlignment = VerticalAlignment.Top;
-            Console.WriteLine("safa" + inhalt.Width + " " + inhalt.Height);
-            inhalt.Children.Clear();
-            inhalt.Children.Add(liste);
+            int counterRes = 0;
+            foreach (Reservation reservation in Bibliothek.Reservation_Alle())
+            {
+                counterRes++;
+            }
+            if (counterRes != 0)
+            {
+                Listview liste = new Listview();
+                liste.HorizontalAlignment = HorizontalAlignment.Left;
+                liste.VerticalAlignment = VerticalAlignment.Top;
+                Console.WriteLine("safa" + inhalt.Width + " " + inhalt.Height);
+                inhalt.Children.Clear();
+                inhalt.Children.Add(liste);
+            }else
+            {
+                MessageBox.Show("Bitte erstellen Sie eine Reservation!");
+            }   
+
         }
 
         private void showOverview_Click(object sender, RoutedEventArgs e)

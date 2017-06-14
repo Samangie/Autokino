@@ -7,7 +7,7 @@
              mc:Ignorable="d" 
              d:DesignHeight="350" d:DesignWidth="530">
     <StackPanel  x:Name="content">
-        <Grid x:Name="inhalt" MinHeight="300" >
+        <Grid x:Name="inhalt" MinHeight="200" >
 
         </Grid>
         <Canvas x:Name="toolbar"  Height="50">
