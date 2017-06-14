@@ -144,3 +144,9 @@ C:\Users\sam.hawkes.COMVATION\Desktop\Test\M120-LB2-FS17 - Kino\M120-LB2-FS17\ob
 C:\Users\sam.hawkes.COMVATION\Desktop\Test\M120-LB2-FS17 - Kino\M120-LB2-FS17\obj\Debug\M120-LB2-FS17.g.resources
 C:\Users\sam.hawkes.COMVATION\Desktop\Test\M120-LB2-FS17 - Kino\M120-LB2-FS17\obj\Debug\M120_LB2_FS17.Properties.Resources.resources
 C:\Users\sam.hawkes.COMVATION\Desktop\Test\M120-LB2-FS17 - Kino\M120-LB2-FS17\obj\Debug\M120-LB2-FS17.csproj.GenerateResource.Cache
+C:\Users\sonny\OneDrive\Dokumente\GitHub\Autokino\M120-LB2-FS17 - Kino\M120-LB2-FS17\obj\Debug\CreateFilm.g.cs
+C:\Users\sonny\OneDrive\Dokumente\GitHub\Autokino\M120-LB2-FS17 - Kino\M120-LB2-FS17\obj\Debug\KinoConfig.g.cs
+C:\Users\sonny\OneDrive\Dokumente\GitHub\Autokino\M120-LB2-FS17 - Kino\M120-LB2-FS17\obj\Debug\Menu.g.cs
+C:\Users\sonny\OneDrive\Dokumente\GitHub\Autokino\M120-LB2-FS17 - Kino\M120-LB2-FS17\obj\Debug\CreateFilm.baml
+C:\Users\sonny\OneDrive\Dokumente\GitHub\Autokino\M120-LB2-FS17 - Kino\M120-LB2-FS17\obj\Debug\KinoConfig.baml
+C:\Users\sonny\OneDrive\Dokumente\GitHub\Autokino\M120-LB2-FS17 - Kino\M120-LB2-FS17\obj\Debug\Menu.baml

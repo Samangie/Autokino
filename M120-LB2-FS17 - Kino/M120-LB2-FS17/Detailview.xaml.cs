@@ -26,10 +26,10 @@ namespace M120_LB2_FS17
             selectedid++;
             datenAbfragen(selectedid);
         }
-        public Detailview(int column, int row)
+        public Detailview(int column, int row, String film, DateTime date)
         {
             InitializeComponent();
-            int selectedid = getId(column, row);
+            int selectedid = getId(column, row, film, date);
             Console.WriteLine(selectedid);
             if (selectedid != 0)
             {
@@ -76,7 +76,7 @@ namespace M120_LB2_FS17
         {
             Reservation reservation = new Reservation();
 
-            if(checkNull(tbKunde.Text) && checkCB(cbFilm.SelectedIndex) && checkCB(cbPlatz.SelectedIndex) && checkNull(tbDatum.Text))
+            if (checkNull(tbKunde.Text) && checkCB(cbFilm.SelectedIndex) && checkCB(cbPlatz.SelectedIndex) && checkNull(tbDatum.Text) );
             {
                 reservation.ID = Convert.ToInt16(lblId.Content);
                 reservation.Kunde = tbKunde.Text;
@@ -98,7 +98,7 @@ namespace M120_LB2_FS17
             inhalt.Children.Clear();
             inhalt.Children.Add(liste);
         }
-        private int getId(int column, int row)
+        private int getId(int column, int row, String filmname, DateTime date)
         {
             Platz place = Bibliothek.Platz_nach_PosRes(column, row);
             if (place == null)
@@ -106,7 +106,9 @@ namespace M120_LB2_FS17
                 return 0;
             }
 
-            Reservation reservation = Bibliothek.Reservation_nach_Platz(place);
+            Film film = Bibliothek.Film_nach_Name(filmname);
+
+            Reservation reservation = Bibliothek.Reservation_nach_Film_Datum_Platz(film, date, place);
 
             if (reservation == null)
             {

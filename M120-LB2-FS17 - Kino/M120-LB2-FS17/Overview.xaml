@@ -6,8 +6,13 @@
              xmlns:local="clr-namespace:M120_LB2_FS17"
              mc:Ignorable="d" 
              d:DesignHeight="270" d:DesignWidth="530">
-    <Grid x:Name="grid">
+    <StackPanel x:Name="inhalt">
 
-
-    </Grid>
+        <Grid x:Name="grid" MinHeight="100"></Grid>
+        <Canvas Height="50">
+            <ComboBox Grid.Row="3" x:Name="cbFilm" Grid.Column="1" HorizontalAlignment="Left" Width="140" Height="20" Grid.ColumnSpan="2" Canvas.Left="10" Canvas.Top="12" SelectedIndex="0"/>
+            <DatePicker x:Name="tbDatum" Grid.Row="4" Grid.Column="1" HorizontalAlignment="Left" Width="140" Height="25" Grid.ColumnSpan="2" Canvas.Left="154" Canvas.Top="10"/>
+            <Button x:Name="btnSearch" Content="Suche" Canvas.Left="310" Canvas.Top="12" Width="66" Click="btnSearch_Click" />
+        </Canvas>
+    </StackPanel>
 </UserControl>

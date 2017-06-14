@@ -20,6 +20,8 @@ namespace M120_LB2_FS17
     /// </summary>
     public partial class KinoConfig : UserControl
     {
+        public int column { get; set; }
+        public int row { get; set; }
         public KinoConfig()
         {
             InitializeComponent();
@@ -29,8 +31,8 @@ namespace M120_LB2_FS17
         {
             if (checkInput(txtColumn.Text) && checkInput(txtRow.Text))
             {
-                int column = Convert.ToInt16(txtColumn.Text);
-                int row = Convert.ToInt16(txtRow.Text);
+                column = Convert.ToInt16(txtColumn.Text);
+                row = Convert.ToInt16(txtRow.Text);
                 Menu menu = new Menu(column, row);
                 menu.HorizontalAlignment = HorizontalAlignment.Left;
                 menu.VerticalAlignment = VerticalAlignment.Top;

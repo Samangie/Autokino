@@ -35,17 +35,10 @@ namespace M120_LB2_FS17
                 film.Name = filmname;
                 Bibliothek.Film_Neu(film);
 
-                loadOverview();
-            }
-        }
+                MessageBox.Show("Film wurde hinzugefügt.");
+                tbfilm.Clear();
 
-        private void loadOverview()
-        {
-            Overview overview = new Overview();
-            overview.HorizontalAlignment = HorizontalAlignment.Center;
-            overview.VerticalAlignment = VerticalAlignment.Center;
-            inhalt.Children.Clear();
-            inhalt.Children.Add(overview);
+            }
         }
 
         private bool checkInput(String value)

@@ -21,20 +21,35 @@ namespace M120_LB2_FS17
     /// </summary>
     public partial class Overview : UserControl
     {
+        private String film;
+        private DateTime date;
+        private int column, row;
 
         public Overview()
         {
             InitializeComponent();
+            generateField();
 
         }
         public Overview(int column, int row)
-        {
+        {         
+
             InitializeComponent();
-            generateField(column, row);
+
+            this.column = column;
+            this.row = row;
+            fillFilminCB();
+            film = Convert.ToString(cbFilm.SelectedItem);
+            tbDatum.SelectedDate = DateTime.Today.AddDays(0);
+            date = Convert.ToDateTime(tbDatum.Text);
+            
+            generateField();
+
+           
 
         }
 
-        private void generateField(int column, int row)
+        private void generateField()
         {
             Grid placegrid = new Grid();
  
@@ -111,27 +126,45 @@ namespace M120_LB2_FS17
         private void showDetail(object sender, EventArgs e)
         {
             String[] btnContent = (sender as Button).Content.ToString().Split(':');
-            int column = Convert.ToInt16(btnContent[0]);
-            int row = Convert.ToInt16(btnContent[1]);
+            int selectedcolumn = Convert.ToInt16(btnContent[0]);
+            int selectedrow = Convert.ToInt16(btnContent[1]);
 
-            Detailview detail = new Detailview(column, row);
+            Detailview detail = new Detailview(selectedcolumn, selectedrow, film, date);
             detail.HorizontalAlignment = HorizontalAlignment.Left;
             detail.VerticalAlignment = VerticalAlignment.Top;
-            grid.Children.Clear();
-            grid.Children.Add(detail);
+            inhalt.Children.Clear();
+            inhalt.Children.Add(detail);
         }
 
         public bool existRes(int currentRow, int currenColumn)
         {
             Platz place = Bibliothek.Platz_nach_PosRes(currenColumn, currentRow);
 
-            Reservation reservation = Bibliothek.Reservation_nach_Platz(place);
+            Film filmData = Bibliothek.Film_nach_Name(film);
+            Console.Write("Fgil " + film);
+
+            Reservation reservation = Bibliothek.Reservation_nach_Film_Datum_Platz(filmData, date, place);
 
             if (reservation == null)
             {
                 return false;
             }
             return true;
+        }
+
+        private void fillFilminCB()
+        {
+            foreach (Film film in Bibliothek.Film_Alle())
+            {
+                cbFilm.Items.Add(film.Name);
+            }
+        }
+        private void btnSearch_Click(object sender, RoutedEventArgs e)
+        {
+            film = Convert.ToString(cbFilm.SelectedItem);
+            date = Convert.ToDateTime(tbDatum.Text);
+            Console.Write("Fgil " + film);
+            generateField();
         }
     }
 }

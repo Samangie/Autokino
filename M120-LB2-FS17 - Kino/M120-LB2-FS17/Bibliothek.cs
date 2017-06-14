@@ -81,16 +81,19 @@ namespace M120_LB2_FS17
             {
                 Reservation = new List<M120_LB2_FS17.Reservation>();
             }
-            if (reservation.ID == 0)
+            if (reservation.ID == 0 )
             {
                 reservation.ID = IDReservation;
                 IDReservation++;
+                if (checkPos(reservation.Platz.ID, reservation.Film.Name, reservation.Datum, IDReservation))
+                {
+                    Reservation.Add(reservation);
+                    // Nachtragen Film
+                    Film_nach_ID(reservation.Film.ID).Reservationen.Add(reservation);
+                    // Nachtragen Platz
+                    Platz_nach_ID(reservation.Platz.ID).Reservationen.Add(reservation);
+                }
 
-                Reservation.Add(reservation);
-                // Nachtragen Film
-                Film_nach_ID(reservation.Film.ID).Reservationen.Add(reservation);
-                // Nachtragen Platz
-                Platz_nach_ID(reservation.Platz.ID).Reservationen.Add(reservation);
             }
             else
             {
@@ -119,10 +122,25 @@ namespace M120_LB2_FS17
         {
             return (from element in Reservation where element.Platz == platz select element).FirstOrDefault();
         }
-        public static List<Reservation> Reservation_nach_Film_Datum(Film film, DateTime datum)
+        public static Reservation Reservation_nach_Film_Datum_Platz(Film film, DateTime datum, Platz platz)
         {
-            return (from element in Reservation where element.Film == film && element.Datum == datum select element).ToList();
+            return (from element in Reservation where element.Film == film && element.Datum == datum && element.Platz == platz select element).FirstOrDefault();
         }
         #endregion
+        private static bool checkPos(int selectedPlatz, String filmname, DateTime date, int id)
+        {
+
+            Platz place = Bibliothek.Platz_nach_ID(selectedPlatz);
+
+            Film film = Bibliothek.Film_nach_Name(filmname);
+
+            Reservation reservation = Bibliothek.Reservation_nach_Film_Datum_Platz(film, date, place);
+
+            if (reservation == null || reservation.ID == id)
+            {
+                return true;
+            }
+            return false;
+        }
     }
 }
